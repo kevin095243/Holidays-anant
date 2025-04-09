@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4faff;
+  color: #333;
+}
+
+header {
+  background: #00bcd4;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 50px;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.destinations {
+  padding: 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff176;
+  padding: 20px;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+}
+
+footer {
+  background: #00bcd4;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.booking {
+  text-align: center;
+  margin: 40px auto;
+}
+
+#booking-form {
+  display: none;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+#booking-form.show {
+  display: block;
+}
+
+#booking-form input, #booking-form button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
